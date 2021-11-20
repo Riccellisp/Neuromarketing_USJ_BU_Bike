@@ -1,0 +1,23 @@
+STUDY NAME: Study_USJ_BU_001
+ANALYSIS NAME: Study_USJ_BU_P00_P08
+
+
+SUMMARY STATISTICS
+Group	G1	G1	G1	G1	All Groups	All Groups	All Groups	All Groups
+Summary Statistics	Count	Average Age	Median Age	Std. Dev Age	Count	Average Age	Median Age	Std. Dev Age
+Male	2	39.5	39.5	10.61	2	39.5	39.5	10.61
+Female	7	21.14	17	11.28	7	21.14	17	11.28
+Total	9	25.22	17	13.23	9	25.22	17	13.23
+
+
+RESPONDENTS INFO
+Respondent Name	Age	Gender	Group
+P00	47	Male	G1
+P01	32	Male	G1
+P02	22	Female	G1
+P03	16	Female	G1
+P04	17	Female	G1
+P05	17	Female	G1
+P06	17	Female	G1
+P07	13	Female	G1
+P08	46	Female	G1

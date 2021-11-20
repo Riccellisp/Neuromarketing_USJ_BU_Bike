@@ -1,0 +1,21 @@
+Respondent Name,Label,Anger Frames >= Threshold,Sadness Frames >= Threshold,Disgust Frames >= Threshold,Joy Frames >= Threshold,Surprise Frames >= Threshold,Fear Frames >= Threshold,Contempt Frames >= Threshold,Engagement Frames >= Threshold,Attention Frames >= Threshold
+P03,Survey-Starting-Agreement,0,0,0,0,0,0,0,9,335
+P03,Instructions-Part-1,0,0,0,0,0,0,0,0,105
+P03,logo01,0,0,0,0,0,0,0,0,90
+P03,logo02_name-white,0,0,0,0,0,0,0,11,90
+P03,logo03_name-white,0,0,0,48,0,0,0,54,89
+P03,logo04_name-white,0,0,0,90,0,0,0,90,90
+P03,Survey-FavoriteBrand,0,0,0,138,14,0,0,180,242
+P03,Survey-BrandAwareness,0,0,0,17,0,0,0,20,122
+P03,Instructions-Part-2,0,0,0,0,0,0,0,18,161
+P03,logo-product01,0,0,0,0,0,0,0,0,90
+P03,logo-product02,0,0,0,33,0,0,0,45,90
+P03,logo-product03,0,0,0,29,0,0,0,47,89
+P03,logo-product04,0,0,0,0,0,0,0,7,90
+P03,Survey-FavoriteProduct,0,0,0,7,0,0,0,25,78
+P03,Instructions-Part-3,0,0,0,0,0,0,0,0,131
+P03,video01 - LOOK,0,0,0,473,0,8,0,556,969
+P03,video02 - Pinarello,0,0,0,0,0,0,0,0,904
+P03,video03 - Trek,0,0,0,0,0,0,0,0,1049
+P03,video04 - Specialized,0,0,0,0,0,8,0,26,901
+P03,Survey-FavoriteVideoAd,0,0,0,0,0,0,0,0,104

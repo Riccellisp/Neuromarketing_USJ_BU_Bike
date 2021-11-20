@@ -1,0 +1,20 @@
+Keyboard response answer
+Question ID	Question (2)
+Headline	
+Number of Categories	1
+Attached to stimulus	N/A
+LABEL ID	LABEL TEXT	LABEL VALUE	KEY ASSIGNMENT
+Label1	Press "S" to Start	1	S
+QUESTION ID	QUESTION TEXT
+
+STUDY	RESPONDENT	GENDER	AGE	GROUP	LABEL ID	LABEL TEXT	LABEL VALUE	KEY ASSIGNMENT	TIMING
+
+Study-USJ-BU-001	P08	FEMALE	46	G1	Label1	Press "S" to Start	1	S	14760.5449
+Study-USJ-BU-001	P07	FEMALE	13	G1	Label1	Press "S" to Start	1	S	5345.3266
+Study-USJ-BU-001	P06	FEMALE	17	G1	Label1	Press "S" to Start	1	S	14720.8449
+Study-USJ-BU-001	P05	FEMALE	17	G1	Label1	Press "S" to Start	1	S	12605.0175
+Study-USJ-BU-001	P04	FEMALE	17	G1	Label1	Press "S" to Start	1	S	11399.0213
+Study-USJ-BU-001	P03	FEMALE	16	G1	Label1	Press "S" to Start	1	S	10845.3989
+Study-USJ-BU-001	P02	FEMALE	22	G1	Label1	Press "S" to Start	1	S	16002.7647
+Study-USJ-BU-001	P01	MALE	32	G1	Label1	Press "S" to Start	1	S	14530.0867
+Study-USJ-BU-001	P00	MALE	47	G1	Label1	Press "S" to Start	1	S	16482.0956

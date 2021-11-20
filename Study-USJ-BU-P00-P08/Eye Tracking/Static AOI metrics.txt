@@ -1,0 +1,16 @@
+AOI RESULTS FOR INDIVIDUALS ON ALL STIMULI
+
+Analysis: Study-USJ-BU-P00-P08
+
+Fixation Algorithm 	I-VT Fixation
+Gap Fill-in (interpolation)	Enabled	Max Gap Length=75 ms	
+Noise Reduction 	Disabled	
+Fixation Filter Parameters	Window Length=20 ms	Velocity Threshold=30 degrees/second	
+Merge Adjacent Fixations	Enabled	Max Time Between Fixations=75 ms	Max Angle Between Fixations=0.5 degrees	
+Discard Short Fixations	Enabled	Minimum Fixation Duration=60 ms	
+
+Definitions
+G: Gaze result
+F: Fixation result
+
+Study name	Respondent Name	Gender	Age	Group	Type	Label	Start (ms)	Duration (ms)	ParentStimulus	Parent Stimulus_Start (ms)	Parent Stimulus_Duration (ms)	Hit time-G (ms)	Time spent-G (ms)	Time spent-G (%)	Respondent ratio-G	Revisit-G (Revisitors)	Revisit-G (Visitors)	Revisit-G (Revisits)	TTFF-F (ms)	Time spent-F (ms)	Time spent-F (%)	Revisit-F (Revisitors)	Revisit-F (Visitors)	Revisit-F (Revisits)	Fixations Count	First Fixation Duration (ms)	Average Fixations Duration (ms)	Mouse Clicks

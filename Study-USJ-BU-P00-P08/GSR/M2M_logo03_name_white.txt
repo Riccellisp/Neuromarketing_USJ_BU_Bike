@@ -1,0 +1,11 @@
+logo03_name-white
+Respondent	Peak Detection Name	1[0-5s]	2[5-10s]
+P00	GSR Peaks (GSR)	0	0
+P01	GSR Peaks (GSR)	0	0
+P02	GSR Peaks (GSR)	0	0
+P03	GSR Peaks (GSR)	1	1
+P04	GSR Peaks (GSR)	1	0
+P05	GSR Peaks (GSR)	0	0
+P06	GSR Peaks (GSR)	0	0
+P07	GSR Peaks (GSR)	0	0
+P08	GSR Peaks (GSR)	0	0

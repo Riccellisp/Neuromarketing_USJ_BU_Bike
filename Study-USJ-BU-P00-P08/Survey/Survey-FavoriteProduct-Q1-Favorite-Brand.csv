@@ -1,0 +1,52 @@
+Multiple Choice Matrix
+Question ID	Q1-Favorite-Brand
+Headline	Which brand created the best impression on you?
+Allow multiple choice	NO
+Number of Categories	4
+Number of Questions	1
+Attached to stimulus	N/A
+LABEL ID	LABEL TEXT	LABEL VALUE
+Label1	Look	1
+Label2	Pinarello	2
+Label3	Trek	3
+Label4	Specialized	4
+QUESTION ID	QUESTION TEXT
+Question1	Select your favorite brand:
+
+STUDY	RESPONDENT	GENDER	AGE	GROUP	Question1.LABELID	Question1.LABELTEXT	Question1.LABELVALUE	Question1.TIMING	
+Study-USJ-BU-001	P08	FEMALE	46	G1	Label1	Look		
+Study-USJ-BU-001	P08	FEMALE	46	G1	Label2	Pinarello		
+Study-USJ-BU-001	P08	FEMALE	46	G1	Label3	Trek	3	6004.07769999999
+Study-USJ-BU-001	P08	FEMALE	46	G1	Label4	Specialized		
+Study-USJ-BU-001	P07	FEMALE	13	G1	Label1	Look		
+Study-USJ-BU-001	P07	FEMALE	13	G1	Label2	Pinarello		
+Study-USJ-BU-001	P07	FEMALE	13	G1	Label3	Trek		
+Study-USJ-BU-001	P07	FEMALE	13	G1	Label4	Specialized	4	9135.2441
+Study-USJ-BU-001	P06	FEMALE	17	G1	Label1	Look	1	5827.2545
+Study-USJ-BU-001	P06	FEMALE	17	G1	Label2	Pinarello		
+Study-USJ-BU-001	P06	FEMALE	17	G1	Label3	Trek		
+Study-USJ-BU-001	P06	FEMALE	17	G1	Label4	Specialized		
+Study-USJ-BU-001	P05	FEMALE	17	G1	Label1	Look		
+Study-USJ-BU-001	P05	FEMALE	17	G1	Label2	Pinarello		
+Study-USJ-BU-001	P05	FEMALE	17	G1	Label3	Trek	3	3290.51909999999
+Study-USJ-BU-001	P05	FEMALE	17	G1	Label4	Specialized		
+Study-USJ-BU-001	P04	FEMALE	17	G1	Label1	Look		
+Study-USJ-BU-001	P04	FEMALE	17	G1	Label2	Pinarello		
+Study-USJ-BU-001	P04	FEMALE	17	G1	Label3	Trek		
+Study-USJ-BU-001	P04	FEMALE	17	G1	Label4	Specialized	4	3412.71799999999
+Study-USJ-BU-001	P03	FEMALE	16	G1	Label1	Look	1	2891.1868
+Study-USJ-BU-001	P03	FEMALE	16	G1	Label2	Pinarello		
+Study-USJ-BU-001	P03	FEMALE	16	G1	Label3	Trek		
+Study-USJ-BU-001	P03	FEMALE	16	G1	Label4	Specialized		
+Study-USJ-BU-001	P02	FEMALE	22	G1	Label1	Look	1	8921.06539999999
+Study-USJ-BU-001	P02	FEMALE	22	G1	Label2	Pinarello		
+Study-USJ-BU-001	P02	FEMALE	22	G1	Label3	Trek		
+Study-USJ-BU-001	P02	FEMALE	22	G1	Label4	Specialized		
+Study-USJ-BU-001	P01	MALE	32	G1	Label1	Look		
+Study-USJ-BU-001	P01	MALE	32	G1	Label2	Pinarello		
+Study-USJ-BU-001	P01	MALE	32	G1	Label3	Trek	3	9219.35070000001
+Study-USJ-BU-001	P01	MALE	32	G1	Label4	Specialized		
+Study-USJ-BU-001	P00	MALE	47	G1	Label1	Look		
+Study-USJ-BU-001	P00	MALE	47	G1	Label2	Pinarello	2	2109.35889999999
+Study-USJ-BU-001	P00	MALE	47	G1	Label3	Trek		
+Study-USJ-BU-001	P00	MALE	47	G1	Label4	Specialized		

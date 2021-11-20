@@ -1,0 +1,11 @@
+video02 - Pinarello
+Respondent	Peak Detection Name	1[0-5s]	2[5-10s]	3[10-15s]	4[15-20s]	5[20-25s]	6[25-30s]	7[30-35s]	8[35-40s]	9[40-45s]	10[45-50s]	11[50-55s]	12[55-60s]	13[60-65s]
+P00	GSR Peaks (GSR)	1	1	0	0	0	0	0	0	0	0	0	0	0
+P01	GSR Peaks (GSR)	1	1	1	1	0	1	0	0	1	0	1	1	0
+P02	GSR Peaks (GSR)	0	1	0	0	0	0	0	0	0	0	0	0	0
+P03	GSR Peaks (GSR)	1	0	0	0	1	1	1	0	1	1	0	1	0
+P04	GSR Peaks (GSR)	1	1	1	1	0	1	1	1	1	1	0	1	0
+P05	GSR Peaks (GSR)	0	0	0	0	0	0	0	0	0	0	0	0	0
+P06	GSR Peaks (GSR)	0	0	0	1	0	0	0	0	0	0	1	1	0
+P07	GSR Peaks (GSR)	1	1	1	1	1	0	1	0	0	1	1	1	0
+P08	GSR Peaks (GSR)	1	1	0	0	0	1	1	1	0	0	0	0	0

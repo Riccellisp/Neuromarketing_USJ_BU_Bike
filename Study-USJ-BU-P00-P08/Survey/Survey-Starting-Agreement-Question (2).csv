@@ -1,0 +1,20 @@
+Keyboard response answer
+Question ID	Question (2)
+Headline	Participation Agreement
+Number of Categories	1
+Attached to stimulus	N/A
+LABEL ID	LABEL TEXT	LABEL VALUE	KEY ASSIGNMENT
+Label1	Press "Enter", you agree to participate.	1	Return
+QUESTION ID	QUESTION TEXT
+
+STUDY	RESPONDENT	GENDER	AGE	GROUP	LABEL ID	LABEL TEXT	LABEL VALUE	KEY ASSIGNMENT	TIMING
+
+Study-USJ-BU-001	P08	FEMALE	46	G1	Label1	Press "Enter", you agree to participate.	1	Return	31803.4311
+Study-USJ-BU-001	P07	FEMALE	13	G1	Label1	Press "Enter", you agree to participate.	1	Return	14471.5448
+Study-USJ-BU-001	P06	FEMALE	17	G1	Label1	Press "Enter", you agree to participate.	1	Return	5220.2379
+Study-USJ-BU-001	P05	FEMALE	17	G1	Label1	Press "Enter", you agree to participate.	1	Return	6769.0619
+Study-USJ-BU-001	P04	FEMALE	17	G1	Label1	Press "Enter", you agree to participate.	1	Return	3367.4902
+Study-USJ-BU-001	P03	FEMALE	16	G1	Label1	Press "Enter", you agree to participate.	1	Return	22770.2103
+Study-USJ-BU-001	P02	FEMALE	22	G1	Label1	Press "Enter", you agree to participate.	1	Return	23455.0009
+Study-USJ-BU-001	P01	MALE	32	G1	Label1	Press "Enter", you agree to participate.	1	Return	8067.9689
+Study-USJ-BU-001	P00	MALE	47	G1	Label1	Press "Enter", you agree to participate.	1	Return	33552.3103
