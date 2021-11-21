@@ -1,6 +1,6 @@
-RESPONDENT,STIMULI,Anger Frames >= Threshold,	Sadness Frames >= Threshold,	Disgust Frames >= Threshold,Joy Frames >= Threshold,Surprise Frames >= Threshold,	Fear Frames >= Threshold,Contempt Frames >= Threshold,	Engagement Frames >= Threshold,	Attention Frames >= Threshold,gsr
-P07,video04 - Specialized,0,0,0,0,0,0,0,0,901,10
-P04,video04 - Specialized,0,0,0,0,84,0,0,173,901,6
-P03,video04 - Specialized,0,0,0,0,0,8,0,26,901,10
-P02,video04 - Specialized,0,0,0,0,0,0,0,0,1089,0
-P00,video04 - Specialized,0,0,0,0,0,0,0,62,1187,0
+index,RESPONDENT,STIMULI,Anger Frames >= Threshold,	Sadness Frames >= Threshold,	Disgust Frames >= Threshold,Joy Frames >= Threshold,Surprise Frames >= Threshold,	Fear Frames >= Threshold,Contempt Frames >= Threshold,	Engagement Frames >= Threshold,	Attention Frames >= Threshold,gsr,experiment,label
+18,P07,video04 - Specialized,0,0,0,0,0,0,0,0,901,10,video,specialized
+18,P04,video04 - Specialized,0,0,0,0,84,0,0,173,901,6,video,specialized
+18,P03,video04 - Specialized,0,0,0,0,0,8,0,26,901,10,video,specialized
+18,P02,video04 - Specialized,0,0,0,0,0,0,0,0,1089,0,video,specialized
+18,P00,video04 - Specialized,0,0,0,0,0,0,0,62,1187,0,video,specialized

@@ -1,5 +1,5 @@
-RESPONDENT,STIMULI,Anger Frames >= Threshold,	Sadness Frames >= Threshold,	Disgust Frames >= Threshold,Joy Frames >= Threshold,Surprise Frames >= Threshold,	Fear Frames >= Threshold,Contempt Frames >= Threshold,	Engagement Frames >= Threshold,	Attention Frames >= Threshold,gsr,et
-P08,logo01,0,0,0,0,0,0,0,0,89,1,227.59035294117825
-P07,logo01,0,0,0,0,0,0,0,0,90,1,192.3074131578948
-P05,logo01,0,0,0,0,0,0,0,0,90,0,188.3600409090907
-P03,logo01,0,0,0,0,0,0,0,0,90,2,246.68722999999954
+index,RESPONDENT,STIMULI,Anger Frames >= Threshold,	Sadness Frames >= Threshold,	Disgust Frames >= Threshold,Joy Frames >= Threshold,Surprise Frames >= Threshold,	Fear Frames >= Threshold,Contempt Frames >= Threshold,	Engagement Frames >= Threshold,	Attention Frames >= Threshold,gsr,et,experiment,label
+2,P08,logo01,0,0,0,0,0,0,0,0,89,1,227.59035294117825,logo,look
+2,P07,logo01,0,0,0,0,0,0,0,0,90,1,192.3074131578948,logo,look
+2,P05,logo01,0,0,0,0,0,0,0,0,90,0,188.3600409090907,logo,look
+2,P03,logo01,0,0,0,0,0,0,0,0,90,2,246.68722999999954,logo,look

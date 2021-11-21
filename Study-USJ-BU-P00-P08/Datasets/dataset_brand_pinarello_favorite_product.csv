@@ -1,3 +1,2 @@
-RESPONDENT,STIMULI,Anger Frames >= Threshold,	Sadness Frames >= Threshold,	Disgust Frames >= Threshold,Joy Frames >= Threshold,Surprise Frames >= Threshold,	Fear Frames >= Threshold,Contempt Frames >= Threshold,	Engagement Frames >= Threshold,	Attention Frames >= Threshold,gsr,et
-P01,logo-product02,0,0,0,0,0,0,0,7,96,1,261.18862105263355
-P00,logo-product02,0,0,0,0,0,0,0,0,106,0,251.63510833333487
+index,RESPONDENT,STIMULI,Anger Frames >= Threshold,	Sadness Frames >= Threshold,	Disgust Frames >= Threshold,Joy Frames >= Threshold,Surprise Frames >= Threshold,	Fear Frames >= Threshold,Contempt Frames >= Threshold,	Engagement Frames >= Threshold,	Attention Frames >= Threshold,gsr,et,experiment,label
+10,P00,logo-product02,0,0,0,0,0,0,0,0,106,0,251.63510833333487,product,pinarello

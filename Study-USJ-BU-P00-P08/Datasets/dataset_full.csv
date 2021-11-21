@@ -1,0 +1,28 @@
+RESPONDENT,STIMULI,Anger Frames >= Threshold,	Sadness Frames >= Threshold,	Disgust Frames >= Threshold,Joy Frames >= Threshold,Surprise Frames >= Threshold,	Fear Frames >= Threshold,Contempt Frames >= Threshold,	Engagement Frames >= Threshold,	Attention Frames >= Threshold,gsr,et,experiment,label
+P08,logo01,0,0,0,0,0,0,0,0,89,1,227.59035294117825,logo,look
+P07,logo01,0,0,0,0,0,0,0,0,90,1,192.3074131578948,logo,look
+P05,logo01,0,0,0,0,0,0,0,0,90,0,188.3600409090907,logo,look
+P03,logo01,0,0,0,0,0,0,0,0,90,2,246.68722999999954,logo,look
+P01,logo02_name-white,0,0,0,72,0,0,0,100,100,1,260.79092631578993,logo,pinarello
+P00,logo02_name-white,0,0,0,0,0,0,0,0,107,0,306.5902500000003,logo,pinarello
+P02,logo03_name-white,0,0,0,0,0,0,0,0,97,0,239.56851578947408,logo,trek
+P06,logo04_name-white,0,0,0,0,13,0,0,49,90,0,179.8824343750007,logo,specialized
+P04,logo04_name-white,0,0,0,0,0,0,0,0,124,1,245.19175789473957,logo,specialized
+P06,logo-product01,0,0,0,0,3,0,0,4,90,1,201.816664705885,product,look
+P03,logo-product01,0,0,0,0,0,0,0,0,90,1,214.89299772726972,product,look
+P02,logo-product01,0,0,0,0,0,0,0,0,96,1,280.16463529412033,product,look
+P00,logo-product02,0,0,0,0,0,0,0,0,106,0,251.63510833333487,product,pinarello
+P08,logo-product03,0,0,0,0,0,0,0,0,89,0,221.944697727274,product,trek
+P05,logo-product03,0,0,0,0,0,0,0,0,90,0,217.86705526316032,product,trek
+P01,logo-product03,0,0,0,0,0,0,0,4,96,0,298.8350558823536,product,trek
+P07,logo-product04,0,0,0,0,0,0,0,0,89,0,224.41261666666665,product,specialized
+P04,logo-product04,0,0,0,0,84,0,0,90,90,0,249.0079526315793,product,specialized
+P08,video02 - Pinarello,0,0,0,0,0,0,0,0,908,3,,video,pinarello
+P05,video02 - Pinarello,0,0,0,0,0,0,0,0,907,0,,video,pinarello
+P01,video02 - Pinarello,0,0,0,0,22,13,0,98,1082,9,,video,pinarello
+P06,video03 - Trek,0,0,0,0,31,0,0,161,1051,8,,video,trek
+P07,video04 - Specialized,0,0,0,0,0,0,0,0,901,10,,video,specialized
+P04,video04 - Specialized,0,0,0,0,84,0,0,173,901,6,,video,specialized
+P03,video04 - Specialized,0,0,0,0,0,8,0,26,901,10,,video,specialized
+P02,video04 - Specialized,0,0,0,0,0,0,0,0,1089,0,,video,specialized
+P00,video04 - Specialized,0,0,0,0,0,0,0,62,1187,0,,video,specialized

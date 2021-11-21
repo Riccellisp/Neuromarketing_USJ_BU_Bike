@@ -191,6 +191,9 @@ def CreateDataset (results_gsr_favorite,results_et_favorite,results_fc_favorite,
         dataset['gsr'] = np.array(results_gsr_favorite)
         if experiment != 'video':
             dataset['et'] = np.array(results_et_favorite)
+        dataset['experiment'] = experiment
+        dataset['label'] = logoname
+        dataset.reset_index(inplace=True)
         if not os.path.exists('./Datasets'):
             os.makedirs('./Datasets')
         dataset.to_csv(f"./Datasets/dataset_brand_{logoname}_favorite_{experiment}.csv",index=False)
@@ -198,6 +201,10 @@ def CreateDataset (results_gsr_favorite,results_et_favorite,results_fc_favorite,
     else:
         print(f"Empty dataframe, there is no participant that liked this {logoname} in {experiment} evaluation?")
         return None
+    
+def MergeDatasets():
+    print('a')
+    
 def Dataset():
     d = pd.read_csv("./Survey/filtered-results.csv")
     cols = d.columns
@@ -255,7 +262,8 @@ def Dataset():
 
     results_gsr_favorite_logo_specialized,results_et_favorite_logo_specialized,results_fc_favorite_logo_specialized = ExtractFromFavoriteLogoPerParticipant (favorite_logo_specialized,'logo04_name-white','specialized','logo')
     dataset_logo_specialized = CreateDataset(results_gsr_favorite_logo_specialized,results_et_favorite_logo_specialized,results_fc_favorite_logo_specialized,'specialized','logo')
-
+    
+    
     
     ############################################## Product #####################################
 
@@ -264,15 +272,16 @@ def Dataset():
     results_gsr_favorite_product_look,results_et_favorite_product_look,results_fc_favorite_product_look = ExtractFromFavoriteLogoPerParticipant (favorite_product_look,'logo-product01','look','product')
     dataset_product_look = CreateDataset(results_gsr_favorite_product_look,results_et_favorite_product_look,results_fc_favorite_product_look,'look','product')
 
-    results_gsr_favorite_product_pinarello,results_et_favorite_product_pinarello,results_fc_favorite_product_pinarello = ExtractFromFavoriteLogoPerParticipant (favorite_logo_pinarello,'logo-product02','pinarello','product')
+    results_gsr_favorite_product_pinarello,results_et_favorite_product_pinarello,results_fc_favorite_product_pinarello = ExtractFromFavoriteLogoPerParticipant (favorite_product_pinarello,'logo-product02','pinarello','product')
     dataset_product_pinarello = CreateDataset(results_gsr_favorite_product_pinarello,results_et_favorite_product_pinarello,results_fc_favorite_product_pinarello,'pinarello','product')
 
-    results_gsr_favorite_product_trek,results_et_favorite_product_trek,results_fc_favorite_product_trek = ExtractFromFavoriteLogoPerParticipant (favorite_logo_trek,'logo-product03','trek','product')
+    results_gsr_favorite_product_trek,results_et_favorite_product_trek,results_fc_favorite_product_trek = ExtractFromFavoriteLogoPerParticipant (favorite_product_trek,'logo-product03','trek','product')
     dataset_product_trek = CreateDataset(results_gsr_favorite_product_trek,results_et_favorite_product_trek,results_fc_favorite_product_trek,'trek','product')
 
-    results_gsr_favorite_product_specialized,results_et_favorite_product_specialized,results_fc_favorite_product_specialized  = ExtractFromFavoriteLogoPerParticipant (favorite_logo_specialized,'logo-product04','specialized','product')
+    results_gsr_favorite_product_specialized,results_et_favorite_product_specialized,results_fc_favorite_product_specialized  = ExtractFromFavoriteLogoPerParticipant (favorite_product_specialized,'logo-product04','specialized','product')
     dataset_product_specialized = CreateDataset(results_gsr_favorite_product_specialized,results_et_favorite_product_specialized,results_fc_favorite_product_specialized,'specialized','product')
 
+    
     
     ########################################## Video #########################################
 
@@ -289,7 +298,14 @@ def Dataset():
     results_gsr_favorite_video_specialized,results_et_favorite_video_specialized,results_fc_favorite_video_specialized  = ExtractFromFavoriteLogoPerParticipant (favorite_video_specialized,'video04 - Specialized','specialized','video')
     dataset_video_specialized = CreateDataset(results_gsr_favorite_video_specialized,results_et_favorite_video_specialized,results_fc_favorite_video_specialized ,'specialized','video')
 
-    breakpoint()
+    
+    dataset = pd.concat([dataset_logo_look,dataset_logo_pinarello,dataset_logo_trek,dataset_logo_specialized,dataset_product_look,
+                         dataset_product_pinarello,dataset_product_trek,dataset_product_specialized,dataset_video_look,
+                         dataset_video_pinarello,dataset_video_trek,dataset_video_specialized],ignore_index=True)
+    
+    dataset.drop(columns='index',inplace=True)
+    dataset.to_csv(f"./Datasets/dataset_full.csv",index=False)
+    return dataset
     
     
 
@@ -298,6 +314,7 @@ def main():
     # FC_results()
     # GSR_results()
     # Survey_results()
-    Dataset()
+    dataset = Dataset()
+    breakpoint()
 if __name__ == "__main__":
     main()

@@ -1,3 +1,3 @@
-RESPONDENT,STIMULI,Anger Frames >= Threshold,	Sadness Frames >= Threshold,	Disgust Frames >= Threshold,Joy Frames >= Threshold,Surprise Frames >= Threshold,	Fear Frames >= Threshold,Contempt Frames >= Threshold,	Engagement Frames >= Threshold,	Attention Frames >= Threshold,gsr,et
-P06,logo-product04,0,0,0,0,0,0,0,0,89,0,203.12721666666766
-P04,logo-product04,0,0,0,0,84,0,0,90,90,0,249.0079526315793
+index,RESPONDENT,STIMULI,Anger Frames >= Threshold,	Sadness Frames >= Threshold,	Disgust Frames >= Threshold,Joy Frames >= Threshold,Surprise Frames >= Threshold,	Fear Frames >= Threshold,Contempt Frames >= Threshold,	Engagement Frames >= Threshold,	Attention Frames >= Threshold,gsr,et,experiment,label
+12,P07,logo-product04,0,0,0,0,0,0,0,0,89,0,224.41261666666665,product,specialized
+12,P04,logo-product04,0,0,0,0,84,0,0,90,90,0,249.0079526315793,product,specialized
