@@ -185,12 +185,16 @@ def ExtractFromFavoriteLogoPerParticipant2 (favorite_participants,stimulli,logon
         
     return results_gsr,results_et,results_fc
 
-def CreateDataset (results_gsr_favorite,results_et_favorite,results_fc_favorite,logoname,experiment):
+def CreateDataset (results_gsr_favorite,results_et_favorite,results_fc_favorite,ages,logoname,experiment):
     if  results_fc_favorite:
         dataset = pd.concat(results_fc_favorite)
         dataset['gsr'] = np.array(results_gsr_favorite)
         if experiment != 'video':
             dataset['et'] = np.array(results_et_favorite)
+        if logoname =='treks':
+            
+            breakpoint()
+        dataset.insert(1, 'AGE', ages)
         dataset['experiment'] = experiment
         dataset['label'] = logoname
         dataset.reset_index(inplace=True)
@@ -211,7 +215,9 @@ def Dataset():
     
     favorite_logo_cols  = ["RESPONDENT","AGE","LABELID_Survey-FavoriteBrand_Q1-Favorite-Brand"]
     favorite_logo =  d[favorite_logo_cols]
-
+    favorite_logo.reset_index(inplace=True)
+    favorite_logo.drop(columns='index',inplace=True)
+    
     favorite_logo_look = favorite_logo[favorite_logo["LABELID_Survey-FavoriteBrand_Q1-Favorite-Brand"] == "Look"]
     favorite_logo_pinarello = favorite_logo[favorite_logo["LABELID_Survey-FavoriteBrand_Q1-Favorite-Brand"] == "Pinarello"]
     favorite_logo_trek = favorite_logo[favorite_logo["LABELID_Survey-FavoriteBrand_Q1-Favorite-Brand"] == "Trek"]
@@ -219,6 +225,8 @@ def Dataset():
     
     favorite_product_cols  = ["RESPONDENT","AGE","LABELID_Survey-FavoriteProduct_Q1-Favorite-Brand"]
     favorite_product = d[favorite_product_cols]
+    favorite_product.reset_index(inplace=True)
+    favorite_product.drop(columns='index',inplace=True)
     
     favorite_product_look = favorite_product[favorite_product["LABELID_Survey-FavoriteProduct_Q1-Favorite-Brand"] == "Look"]
     favorite_product_pinarello = favorite_product[favorite_product["LABELID_Survey-FavoriteProduct_Q1-Favorite-Brand"] == "Pinarello"]
@@ -228,6 +236,8 @@ def Dataset():
     
     favorite_video_cols  = ["RESPONDENT","AGE",    "LABELID_Survey-FavoriteVideoAd_Q1-Favorite-Brand"]
     favorite_video = d[favorite_video_cols]
+    favorite_video.reset_index(inplace=True)
+    favorite_video.drop(columns='index',inplace=True)
     
     favorite_video_look = favorite_video[favorite_video["LABELID_Survey-FavoriteVideoAd_Q1-Favorite-Brand"] == "Look"]
     favorite_video_pinarello = favorite_video[favorite_video["LABELID_Survey-FavoriteVideoAd_Q1-Favorite-Brand"] == "Pinarello"]
@@ -252,16 +262,16 @@ def Dataset():
 
 
     results_gsr_favorite_logo_look,results_et_favorite_logo_look,results_fc_favorite_logo_look = ExtractFromFavoriteLogoPerParticipant (favorite_logo_look,'logo01','look','logo')
-    dataset_logo_look = CreateDataset(results_gsr_favorite_logo_look,results_et_favorite_logo_look,results_fc_favorite_logo_look,'look','logo')
+    dataset_logo_look = CreateDataset(results_gsr_favorite_logo_look,results_et_favorite_logo_look,results_fc_favorite_logo_look,favorite_logo_look['AGE'].values,'look','logo')
     
     results_gsr_favorite_logo_pinarello,results_et_favorite_logo_pinarello,results_fc_favorite_logo_pinarello = ExtractFromFavoriteLogoPerParticipant (favorite_logo_pinarello,'logo02_name-white','pinarello','logo')
-    dataset_logo_pinarello = CreateDataset(results_gsr_favorite_logo_pinarello,results_et_favorite_logo_pinarello,results_fc_favorite_logo_pinarello,'pinarello','logo')
+    dataset_logo_pinarello = CreateDataset(results_gsr_favorite_logo_pinarello,results_et_favorite_logo_pinarello,results_fc_favorite_logo_pinarello,favorite_logo_pinarello['AGE'].values,'pinarello','logo')
 
     results_gsr_favorite_logo_trek,results_et_favorite_logo_trek,results_fc_favorite_logo_trek = ExtractFromFavoriteLogoPerParticipant (favorite_logo_trek,'logo03_name-white','trek','logo')
-    dataset_logo_trek = CreateDataset(results_gsr_favorite_logo_trek,results_et_favorite_logo_trek,results_fc_favorite_logo_trek,'trek','logo')
+    dataset_logo_trek = CreateDataset(results_gsr_favorite_logo_trek,results_et_favorite_logo_trek,results_fc_favorite_logo_trek,favorite_logo_trek['AGE'].values,'trek','logo')
 
     results_gsr_favorite_logo_specialized,results_et_favorite_logo_specialized,results_fc_favorite_logo_specialized = ExtractFromFavoriteLogoPerParticipant (favorite_logo_specialized,'logo04_name-white','specialized','logo')
-    dataset_logo_specialized = CreateDataset(results_gsr_favorite_logo_specialized,results_et_favorite_logo_specialized,results_fc_favorite_logo_specialized,'specialized','logo')
+    dataset_logo_specialized = CreateDataset(results_gsr_favorite_logo_specialized,results_et_favorite_logo_specialized,results_fc_favorite_logo_specialized,favorite_logo_specialized['AGE'].values,'specialized','logo')
     
     
     
@@ -270,16 +280,16 @@ def Dataset():
 
 
     results_gsr_favorite_product_look,results_et_favorite_product_look,results_fc_favorite_product_look = ExtractFromFavoriteLogoPerParticipant (favorite_product_look,'logo-product01','look','product')
-    dataset_product_look = CreateDataset(results_gsr_favorite_product_look,results_et_favorite_product_look,results_fc_favorite_product_look,'look','product')
+    dataset_product_look = CreateDataset(results_gsr_favorite_product_look,results_et_favorite_product_look,results_fc_favorite_product_look,favorite_product_look['AGE'].values,'look','product')
 
     results_gsr_favorite_product_pinarello,results_et_favorite_product_pinarello,results_fc_favorite_product_pinarello = ExtractFromFavoriteLogoPerParticipant (favorite_product_pinarello,'logo-product02','pinarello','product')
-    dataset_product_pinarello = CreateDataset(results_gsr_favorite_product_pinarello,results_et_favorite_product_pinarello,results_fc_favorite_product_pinarello,'pinarello','product')
+    dataset_product_pinarello = CreateDataset(results_gsr_favorite_product_pinarello,results_et_favorite_product_pinarello,results_fc_favorite_product_pinarello,favorite_product_pinarello['AGE'].values,'pinarello','product')
 
     results_gsr_favorite_product_trek,results_et_favorite_product_trek,results_fc_favorite_product_trek = ExtractFromFavoriteLogoPerParticipant (favorite_product_trek,'logo-product03','trek','product')
-    dataset_product_trek = CreateDataset(results_gsr_favorite_product_trek,results_et_favorite_product_trek,results_fc_favorite_product_trek,'trek','product')
+    dataset_product_trek = CreateDataset(results_gsr_favorite_product_trek,results_et_favorite_product_trek,results_fc_favorite_product_trek,favorite_product_trek['AGE'].values,'trek','product')
 
     results_gsr_favorite_product_specialized,results_et_favorite_product_specialized,results_fc_favorite_product_specialized  = ExtractFromFavoriteLogoPerParticipant (favorite_product_specialized,'logo-product04','specialized','product')
-    dataset_product_specialized = CreateDataset(results_gsr_favorite_product_specialized,results_et_favorite_product_specialized,results_fc_favorite_product_specialized,'specialized','product')
+    dataset_product_specialized = CreateDataset(results_gsr_favorite_product_specialized,results_et_favorite_product_specialized,results_fc_favorite_product_specialized,favorite_product_specialized['AGE'].values,'specialized','product')
 
     
     
@@ -287,16 +297,16 @@ def Dataset():
 
 
     results_gsr_favorite_video_look,results_et_favorite_video_look,results_fc_favorite_video_look = ExtractFromFavoriteLogoPerParticipant (favorite_video_look,'video01 - LOOK','look','video')
-    dataset_video_look = CreateDataset(results_gsr_favorite_video_look,results_et_favorite_video_look,results_fc_favorite_video_look,'look','video')
+    dataset_video_look = CreateDataset(results_gsr_favorite_video_look,results_et_favorite_video_look,results_fc_favorite_video_look,favorite_video_look['AGE'].values,'look','video')
 
     results_gsr_favorite_video_pinarello,results_et_favorite_video_pinarello,results_fc_favorite_video_pinarello  = ExtractFromFavoriteLogoPerParticipant (favorite_video_pinarello,'video02 - Pinarello','pinarello','video')
-    dataset_video_pinarello = CreateDataset(results_gsr_favorite_video_pinarello,results_et_favorite_video_pinarello,results_fc_favorite_video_pinarello,'pinarello','video')
+    dataset_video_pinarello = CreateDataset(results_gsr_favorite_video_pinarello,results_et_favorite_video_pinarello,results_fc_favorite_video_pinarello,favorite_video_pinarello['AGE'].values,'pinarello','video')
 
     results_gsr_favorite_video_trek,results_et_favorite_video_trek,results_fc_favorite_video_trek = ExtractFromFavoriteLogoPerParticipant (favorite_video_trek,'video03 - Trek','trek','video')
-    dataset_video_trek = CreateDataset(results_gsr_favorite_video_trek,results_et_favorite_video_trek,results_fc_favorite_video_trek,'trek','video')
+    dataset_video_trek = CreateDataset(results_gsr_favorite_video_trek,results_et_favorite_video_trek,results_fc_favorite_video_trek,favorite_video_trek['AGE'].values,'trek','video')
 
     results_gsr_favorite_video_specialized,results_et_favorite_video_specialized,results_fc_favorite_video_specialized  = ExtractFromFavoriteLogoPerParticipant (favorite_video_specialized,'video04 - Specialized','specialized','video')
-    dataset_video_specialized = CreateDataset(results_gsr_favorite_video_specialized,results_et_favorite_video_specialized,results_fc_favorite_video_specialized ,'specialized','video')
+    dataset_video_specialized = CreateDataset(results_gsr_favorite_video_specialized,results_et_favorite_video_specialized,results_fc_favorite_video_specialized,favorite_video_specialized['AGE'].values,'specialized','video')
 
     
     dataset = pd.concat([dataset_logo_look,dataset_logo_pinarello,dataset_logo_trek,dataset_logo_specialized,dataset_product_look,
@@ -304,7 +314,12 @@ def Dataset():
                          dataset_video_pinarello,dataset_video_trek,dataset_video_specialized],ignore_index=True)
     
     dataset.drop(columns='index',inplace=True)
+    
+
     dataset.to_csv(f"./Datasets/dataset_full.csv",index=False)
+    
+    # adults = favorite_logo[]
+    # youngs = 
     return dataset
     
     

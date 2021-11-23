@@ -1,3 +1,3 @@
-index,RESPONDENT,STIMULI,Anger Frames >= Threshold,	Sadness Frames >= Threshold,	Disgust Frames >= Threshold,Joy Frames >= Threshold,Surprise Frames >= Threshold,	Fear Frames >= Threshold,Contempt Frames >= Threshold,	Engagement Frames >= Threshold,	Attention Frames >= Threshold,gsr,et,experiment,label
-3,P01,logo02_name-white,0,0,0,72,0,0,0,100,100,1,260.79092631578993,logo,pinarello
-3,P00,logo02_name-white,0,0,0,0,0,0,0,0,107,0,306.5902500000003,logo,pinarello
+index,RESPONDENT,AGE,STIMULI,Anger Frames >= Threshold,	Sadness Frames >= Threshold,	Disgust Frames >= Threshold,Joy Frames >= Threshold,Surprise Frames >= Threshold,	Fear Frames >= Threshold,Contempt Frames >= Threshold,	Engagement Frames >= Threshold,	Attention Frames >= Threshold,gsr,et,experiment,label
+3,P01,32,logo02_name-white,0,0,0,72,0,0,0,100,100,1,260.79092631578993,logo,pinarello
+3,P00,47,logo02_name-white,0,0,0,0,0,0,0,0,107,0,306.5902500000003,logo,pinarello

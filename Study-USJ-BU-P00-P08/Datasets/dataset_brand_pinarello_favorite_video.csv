@@ -1,4 +1,4 @@
-index,RESPONDENT,STIMULI,Anger Frames >= Threshold,	Sadness Frames >= Threshold,	Disgust Frames >= Threshold,Joy Frames >= Threshold,Surprise Frames >= Threshold,	Fear Frames >= Threshold,Contempt Frames >= Threshold,	Engagement Frames >= Threshold,	Attention Frames >= Threshold,gsr,experiment,label
-16,P08,video02 - Pinarello,0,0,0,0,0,0,0,0,908,3,video,pinarello
-16,P05,video02 - Pinarello,0,0,0,0,0,0,0,0,907,0,video,pinarello
-16,P01,video02 - Pinarello,0,0,0,0,22,13,0,98,1082,9,video,pinarello
+index,RESPONDENT,AGE,STIMULI,Anger Frames >= Threshold,	Sadness Frames >= Threshold,	Disgust Frames >= Threshold,Joy Frames >= Threshold,Surprise Frames >= Threshold,	Fear Frames >= Threshold,Contempt Frames >= Threshold,	Engagement Frames >= Threshold,	Attention Frames >= Threshold,gsr,experiment,label
+16,P08,46,video02 - Pinarello,0,0,0,0,0,0,0,0,908,3,video,pinarello
+16,P05,17,video02 - Pinarello,0,0,0,0,0,0,0,0,907,0,video,pinarello
+16,P01,32,video02 - Pinarello,0,0,0,0,22,13,0,98,1082,9,video,pinarello

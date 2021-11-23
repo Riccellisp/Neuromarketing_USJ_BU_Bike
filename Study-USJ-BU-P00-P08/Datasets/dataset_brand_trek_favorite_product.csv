@@ -1,4 +1,4 @@
-index,RESPONDENT,STIMULI,Anger Frames >= Threshold,	Sadness Frames >= Threshold,	Disgust Frames >= Threshold,Joy Frames >= Threshold,Surprise Frames >= Threshold,	Fear Frames >= Threshold,Contempt Frames >= Threshold,	Engagement Frames >= Threshold,	Attention Frames >= Threshold,gsr,et,experiment,label
-11,P08,logo-product03,0,0,0,0,0,0,0,0,89,0,221.944697727274,product,trek
-11,P05,logo-product03,0,0,0,0,0,0,0,0,90,0,217.86705526316032,product,trek
-11,P01,logo-product03,0,0,0,0,0,0,0,4,96,0,298.8350558823536,product,trek
+index,RESPONDENT,AGE,STIMULI,Anger Frames >= Threshold,	Sadness Frames >= Threshold,	Disgust Frames >= Threshold,Joy Frames >= Threshold,Surprise Frames >= Threshold,	Fear Frames >= Threshold,Contempt Frames >= Threshold,	Engagement Frames >= Threshold,	Attention Frames >= Threshold,gsr,et,experiment,label
+11,P08,46,logo-product03,0,0,0,0,0,0,0,0,89,0,221.944697727274,product,trek
+11,P05,17,logo-product03,0,0,0,0,0,0,0,0,90,0,217.86705526316032,product,trek
+11,P01,32,logo-product03,0,0,0,0,0,0,0,4,96,0,298.8350558823536,product,trek
